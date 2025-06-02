@@ -1,0 +1,6 @@
+here i will be making the list of all the components 
+
+Navbar =>  1st 
+Cards => 2nd
+Footer = > 3rd
+Login Route =>  4th

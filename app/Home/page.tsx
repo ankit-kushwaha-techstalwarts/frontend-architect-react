@@ -3,64 +3,87 @@
 import { Box, Typography, Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import CardComponents from '@/components/Card_Component/Card_Components';
+import Footer from '@/components/Footer/Footer_Component';
+
+
 
 const Home = () => {
   return (
     <>
-    <div>
-      <Box
-        sx={{
-          padding: 4,
-          textAlign: 'center',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '40px',
-          justifyContent: 'space-between',
-          backgroundColor: '#f5f5f5',
-          color: 'black',
-          width: '100%',
-        }}
-      >
-        <img src="../thrillo-logo.png" alt="photo" width={100} height={38} />
+   <div>
+        <Box
+          sx={{
+            px: 6,
+            py: 2,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            backgroundColor: '#f0f4f8',
+            width: '100%',
+            height: '10vh',
+            boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+            position: 'sticky',
+            top: 0,
+            zIndex: 1000,
+            mb: 4,
+          }}
+        >
+          {/* Logo */}
+          <img src="../thrillo-logo.png" alt="logo" width={100} height={38} />
 
-        <TextField id="outlined-basic" placeholder="type something" variant="outlined" />
+          {/* Search Field */}
+          <TextField
+            id="outlined-basic"
+            placeholder="Search destinations..."
+            variant="outlined"
+            sx={{
+              width: 300,
+              backgroundColor: '#fff',
+              borderRadius: '11px',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+              '& input::placeholder': {
+                fontWeight: 'bold',
+                color: '#999',
+              },
+            }}
+            InputProps={{
+              sx: {
+                borderRadius: '10px',
+              },
+            }}
+          />
+
+          {/* Right Side Icons */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+            <img
+              src="../flag.jpeg"
+              alt="flag"
+              width={60}
+              height={30}
+              style={{ borderRadius: '6px', objectFit: 'cover' }}
+            />
+            <Typography
+              sx={{
+                fontWeight: 'bold',
+                color: '#333',
+                cursor: 'pointer',
+                transition: '0.3s',
+                '&:hover': {
+                  color: '#1976d2',
+                },
+              }}
+            >
+              Login
+            </Typography>
+          </Box>
+        </Box>
+
+        <CardComponents />
+
+        
+       <Footer/>
 
 
-  <Typography >Login</Typography>
-
-           <img src="../flag.jpeg" alt="" width={60} height={30} />
-      </Box>
-
-
-      {/* Not using it currenty , will look into it later */}
-      {/* <Box   
-        sx={{
-          padding: 4,
-          textAlign: 'center',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '20px',
-          justifyContent: 'space-between',
-          backgroundColor: '#e0e0e0',
-          color: 'black',
-          width: '100%',
-        }}
-      >
-        <Button variant="contained" color="primary">
-          Sign Up
-        </Button>
-
-        <Button variant="outlined" color="secondary">
-          Login
-        </Button>
-      </Box> */}
-
- 
- <CardComponents/>
-
-
-
-      
       </div>
     </>
   );

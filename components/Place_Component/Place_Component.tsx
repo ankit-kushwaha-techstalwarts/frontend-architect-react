@@ -11,10 +11,11 @@ interface Place {
 
 export default function PlaceComponent({ place }: { place: Place }) {
   return (
-    <Card sx={{ maxWidth: 300, borderRadius: 2, boxShadow: 3 }}>
+    <Card sx={{ maxWidth: 490, borderRadius: 2, boxShadow: 3 }}>
       <CardMedia
         component="img"
         height="180"
+       
         image={place.imageUrl}
         alt={place.name}
       />

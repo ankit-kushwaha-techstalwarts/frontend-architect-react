@@ -14,6 +14,9 @@ const Footer: React.FC = () => {
         fontFamily: 'Arial, sans-serif',
         borderTop: '1px solid #ddd',
         mt: 'auto',
+        fontSize: '1 rem',
+        textAlign: 'center',
+        fontWeight: 800,
       }}
     >
       <Container maxWidth="lg">
@@ -28,16 +31,41 @@ const Footer: React.FC = () => {
             style={{ margin: '16px' }}
           />
 
-          {/* Copyright */}
-          <Typography variant="body2" color="text.secondary">
+
+            
+
+          {/* Disclaimer */}
+          <Typography variant="caption" color="text.secondary" maxWidth="md"
+          sx={{
+        backgroundColor: '#f5f5f5',
+        color: '#333',
+        py: 4,
+        px: 2,
+        fontFamily: 'Arial, sans-serif',
+        borderTop: '1px solid #ddd',
+        mt: 'auto',
+        fontSize: '2 rem',
+        textAlign: 'center',
+        fontWeight: 400,
+        lineHeight: 1.5,
+      }}
+          
+          >
+            The content and images used on this site are copyright protected 
+             
+            and copyrights vest with the respective owners. The usage of the content and images on this website is intended to promote
+            <br />
+            
+             the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
+          </Typography>
+        </Stack>
+    
+
+    <Typography variant="body2" color="text.secondary" >
             © 2025 Thrillophilia.com All rights reserved.
           </Typography>
 
-          {/* Disclaimer */}
-          <Typography variant="caption" color="text.secondary" maxWidth="md">
-            The content and images used on this site are copyright protected and copyrights vest with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
-          </Typography>
-        </Stack>
+
       </Container>
     </Box>
   );

@@ -4,10 +4,11 @@ import { Box, Typography, Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import CardComponents from '@/components/Card_Component/Card_Components';
 import Footer from '@/components/Footer/Footer_Component';
-
+import { useRouter } from 'next/navigation';
 
 
 const Home = () => {
+  const router = useRouter();
   return (
     <>
    <div>
@@ -72,9 +73,26 @@ const Home = () => {
                   color: '#1976d2',
                 },
               }}
+
+              onClick={() => router.push('/login')}
             >
               Login
             </Typography>
+
+
+            <Typography
+            sx={{
+                fontWeight: 'bold',
+                color: '#333',
+                cursor: 'pointer',
+                transition: '0.3s',
+                '&:hover': {
+                  color: '#1976d2',
+                },
+              }}
+
+              onClick={() => router.push('/signup')}
+            >Signup</Typography>
           </Box>
         </Box>
 

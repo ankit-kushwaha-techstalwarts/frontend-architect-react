@@ -2,11 +2,18 @@
 import React from 'react';
 import PlaceComponent from '../Place_Component/Place_Component';
 
+type Place = {
+  name: string;
+  location: string;
+  price: string;
+  imageUrl: string;
+};
+
 const places: Place[] = [
   {
     name: 'Taj Mahal',
     location: 'Agra, India',
-    price: 'INR20000',
+    price: 'INR 20000',
     imageUrl: 'https://images.unsplash.com/photo-1545562083-c583d014b4f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHRhaiUyMG1haGFsfGVufDB8fDB8fHww',
   },
   {
@@ -32,22 +39,22 @@ const places: Place[] = [
   },
 
    {
-    name: 'India Gate',
-    location: 'Delhi, India',
+    name: 'Goa',
+    location: ' India',
     price: 'INR 15000',
-    imageUrl: 'https://images.unsplash.com/photo-1667760334198-d3958029a08b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGluZGlhbiUyMGZvcmVzdCUyMGltYWdlfGVufDB8fDB8fHww',
+    imageUrl: 'https://images.unsplash.com/photo-1671769195173-e8c838867985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmlsbGFnZSUyMGluZGlhbnxlbnwwfHwwfHx8MA%3D%3D',
   },
 
  {
-    name: 'India Gate',
-    location: 'Delhi, India',
+    name: 'Banaras',
+    location: ' India',
     price: 'INR 15000',
-    imageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SW5kaWElMjBnYXRlfGVufDB8fDB8fHww',
+    imageUrl: 'https://images.unsplash.com/photo-1639729098994-60116f7a7c51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFuYXJhc3xlbnwwfHwwfHx8MA%3D%3D',
   }, {
-    name: 'India Gate',
-    location: 'Delhi, India',
+    name: 'Rann of Kutch',
+    location: ' India',
     price: 'INR 15000',
-    imageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SW5kaWElMjBnYXRlfGVufDB8fDB8fHww',
+    imageUrl: 'https://plus.unsplash.com/premium_photo-1697730073417-c32f239b5675?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGVzZXJ0JTIwc3VucmlzZSUyMHBob3Rv',
   },
 
 ];
